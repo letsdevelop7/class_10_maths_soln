@@ -24,7 +24,7 @@
     <!-- Custom Styles -->
     <style>
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', 'sans-serif';
       }
       /* A subtle highlight for placeholders - kept in case of future edits */
       .placeholder {
@@ -58,7 +58,7 @@
       <!-- Policy Content -->
       <div class="p-8 sm:p-12">
         <p class="text-gray-500 text-sm mb-8">
-          <strong>Effective Date:</strong> <span class="font-medium text-gray-700">October 28, 2025</span>
+          <strong>Effective Date:</strong> <span class="font-medium text-gray-700">October 31, 2025</span>
         </p>
         
         <p class="text-gray-700 leading-relaxed mb-6">
@@ -73,32 +73,63 @@
         <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6 border-b pb-3">
           Information Collection and Use
         </h2>
-        
+
+        <p class="text-gray-700 leading-relaxed mb-6">
+            Our Service is designed to be simple and useful. We do not require you to sign up or provide any personally identifiable information. The information we do collect or store is used to improve the app and support its free-of-charge model.
+        </p>
+
         <h3 class="text-xl font-semibold text-gray-700 mb-3">
-          1. Non-Personal Information (Log Data)
+            1. Information Stored Locally (On Your Device)
         </h3>
         <p class="text-gray-700 leading-relaxed mb-6">
-          We may collect information that your device sends whenever you use our Service ("Log Data"). This Log Data is anonymous and may include information such as your device's operating system version, app version, error logs, and crash data. We use this information solely to improve the stability and performance of our app.
-        </p>
-        
-        <h3 class="text-xl font-semibold text-gray-700 mb-3">
-          2. Google AdMob (Third-Party Advertising)
-        </h3>
-        <p class="text-gray-700 leading-relaxed mb-4">
-          Our Service uses Google AdMob to display advertisements. AdMob is a third-party service provided by Google.
+            To provide a better experience, our app saves some data directly on your device using Android's "SharedPreferences". This data is <strong>never sent to us</strong> and remains private to you on your device. This includes:
         </p>
         <ul class="list-disc list-outside ml-5 space-y-3 text-gray-700 mb-6">
-          <li>
-            <strong>What AdMob Collects:</strong> Google AdMob may collect data and use device identifiers, cookies, or other technologies to show you personalized ads. This data is collected and used by Google to provide, measure, and improve ad relevance.
-          </li>
-          <li>
-            <strong>Google's Privacy Policy:</strong> We do not control what data Google collects or how they use it. We strongly recommend you review Google's policy on "How Google uses data when you use our partners' sites or apps" which you can find here: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-medium hover:underline">https://policies.google.com/technologies/partner-sites</a>
-          </li>
-          <li>
-            <strong>Opting Out:</strong> You can opt out of personalized advertising from Google by visiting your device's "Ads" settings (usually under your device Settings > Google > Ads).
-          </li>
+            <li><strong>Theme Preference:</strong> To remember if you have selected Light Mode or Dark Mode.</li>
+            <li><strong>In-App Review Timestamp:</strong> To remember when we last asked you for a review, so we don't ask you too often.</li>
         </ul>
 
+        <h3 class="text-xl font-semibold text-gray-700 mb-3">
+            2. Third-Party Service: Google AdMob
+        </h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+            Our app is supported by ads from Google AdMob, which allows us to offer the Service for free.
+        </p>
+        <ul class="list-disc list-outside ml-5 space-y-3 text-gray-700 mb-6">
+            <li>
+                <strong>What AdMob Collects:</strong> Google may collect data such as your device's Advertising ID, IP address, and other identifiers to serve personalized ads.
+            </li>
+            <li>
+                <strong>Google's Policy:</strong> We do not control Google's data collection. We recommend you review their policy here: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-medium hover:underline">https://policies.google.com/technologies/partner-sites</a>
+            </li>
+            <li>
+              <strong>Opting Out:</strong> You can opt out of personalized advertising from Google by visiting your device's "Ads" settings (usually under your device Settings > Google > Ads).
+            </li>
+        </ul>
+
+        <h3 class="text-xl font-semibold text-gray-700 mb-3">
+            3. Third-Party Service: Google Play In-App Review API
+        </h3>
+        <p class="text-gray-700 leading-relaxed mb-6">
+            To improve our app, we may use the Google Play In-App Review API to ask for your feedback. This process is managed entirely by Google and is subject to the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-medium hover:underline">Google Privacy Policy</a>. We only trigger the request; Google handles the entire review flow, and we do not collect any personal data during this process.
+        </p>
+
+        <!-- === THIS IS THE NEW SECTION === -->
+        <h3 class="text-xl font-semibold text-gray-700 mb-3">
+            4. Third-Party Service: Google Play In-App Update API
+        </h3>
+        <p class="text-gray-700 leading-relaxed mb-6">
+            To ensure you have the latest features and security patches, our app uses the Google Play In-App Update API. This service may check with Google Play to see if a new version of our app is available. This process is managed by Google and helps us provide you with a notification about new updates, which you can choose to install.
+        </p>
+        <!-- === END OF NEW SECTION === -->
+
+        <h3 class="text-xl font-semibold text-gray-700 mb-3">
+            5. Log Data (For App Stability)
+        </h3>
+        <p class="text-gray-700 leading-relaxed mb-8">
+            We may collect anonymous information that your device sends ("Log Data") to help us identify and fix crashes. This may include your device's operating system version, app version, and error logs. This data is non-personal and is used only to improve app stability.
+        </p>
+        
         <!-- Section: Security -->
         <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6 border-b pb-3">
           Security
@@ -120,7 +151,7 @@
           Children's Privacy
         </h2>
         <p class="text-gray-700 leading-relaxed mb-8">
-          This Service does not knowingly collect personally identifiable information from children under the age of 13. The content is aimed at Class 10 students, who may be under or over 13. If you are a parent or guardian and you are aware that your child has provided us with personal information (which should not be possible through the app), please contact us so that we can take necessary actions.
+          This Service does not knowingly collect personally identifiable information from children under the age of 13. The content is aimed at Class 10 students, who are in the 13-18 target age group. If you are a parent or guardian and you are aware that your child has provided us with personal information (which should not be possible through the app), please contact us so that we can take necessary actions.
         </p>
         
         <!-- Section: Changes -->
@@ -129,7 +160,7 @@
         </h2>
         <p class="text-gray-700 leading-relaxed mb-8">
           We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted.
-        </D>
+        </p> <!-- <-- Fixed stray </D> tag here -->
         
         <!-- Section: Contact -->
         <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6 border-b pb-3">
@@ -139,7 +170,7 @@
           If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:
         </p>
         <p class="text-gray-800 font-semibold text-lg p-4 bg-gray-100 rounded-lg inline-block">
-          <span class="">letsdevelop7@gmail.com</span>
+          <a href="mailto:letsdevelop7@gmail.com" class="hover:underline">letsdevelop7@gmail.com</a>
         </p>
         
       </div> <!-- /Policy Content -->
